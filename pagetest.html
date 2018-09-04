@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+                /* code du test */
+
+                .form-group {
+                        margin: 24px;
+                }
+
+                /* fin code du test */
+
+  </style>
+  <script>
+    'use strict';
+
+    document.addEventListener( "DOMContentLoaded", ev => {
+
+      // code du test
+
+
+                        // fin code du test
+
+    }, false );
+
+    window.addEventListener( "load", ev => {
+
+                        // code du test
+
+                        const
+                                elemForme = document.querySelector( "#range" ),
+                                elemQte = document.querySelector( "#installation" ),
+                                elemAmount = document.querySelector( "#amount" ),
+                                changeHandler = ev => {
+                                        elemAmount.value = (parseFloat( elemForme.value ) + parseFloat( elemQte.value ) ).toFixed( 2 );
+                                };
+
+                        elemForme.addEventListener( "change", changeHandler, false );
+                        elemQte.addEventListener( "change", changeHandler, false );
+
+                        elemQte.dispatchEvent( new Event( "change" ) );
+
+                        // fin code du test
+
+    }, false );
+  </script>
+</head>
+<body>
+  <main>
+
+<button type="button" onclick="document.getElementById('formulaire').style.display='block'">Residential</button>
+
+<button type="button" onclick="document.getElementById('formulaire2').style.display='block'">Commercial</button>
+
+<button type="button" onclick="document.getElementById('formulaire3').style.display='block'">Corporative</button>
+
+<button type="button" onclick="document.getElementById('formulaire4').style.display='block'">Hybrid</button>
+
+<p id="formulaire" style="display:none">											<label>No of appartments</label>
+										<select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+												<option value="1" selected>1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+											</select>
+										</div>
+
+                    <label>No of floors</label>
+                    <select id="client_floors" class="form-control pointer" name="client_floors" data-minimum-results-for-search="Infinity">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+                  <label>No of basement</label>
+                  <select id="client_basement" class="form-control pointer" name="client_basement" data-minimum-results-for-search="Infinity">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                </div>
+                  </p>
+
+<p id="formulaire2" style="display:none">											<label>No of appartments</label>
+											<select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+												<option value="1" selected>1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+											</select>
+										</div>
+
+                    <label>No of floors</label>
+                    <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+                  <label>No of basement</label>
+                  <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                </div>
+                <label>No of parking</label>
+                <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+              </div></p>
+
+<p id="formulaire3" style="display:none">											<label>No of appartments</label>
+											<select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+												<option value="1" selected>1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+											</select>
+										</div>
+
+                    <label>No of floors</label>
+                    <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+                  <label>No of basement</label>
+                  <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                </div>
+                <label>No of parking</label>
+                <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+              </div></p>
+
+<p id="formulaire4" style="display:none">											<label>No of appartments</label>
+											<select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+												<option value="1" selected>1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+											</select>
+										</div>
+
+                    <label>No of floors</label>
+                    <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+                  <label>No of basement</label>
+                  <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                </div>                <label>No of parking</label>
+                                <select id="client_rooms" class="form-control pointer" name="client_rooms" data-minimum-results-for-search="Infinity">
+                                  <option value="1" selected>1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                </select>
+                              </div></p>
+<form>
+  <div class="form-group">
+    <label for="forme">PRODUCT RANGE : </label>
+    <select name="forme" id="range">
+      <option value="7565">Standard</option>
+      <option value="12345">Premium</option>
+      <option value="15400">Excelium</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="forme">Installation price : </label>
+    <select name="forme" id="installation">
+      <option value="75.65">Standard</option>
+      <option value="1604.85">Premium</option>
+      <option value="2464">Excelium</option>
+    </select>
+  </div>
+  </form>
+  <form>
+    <div class="form-group">
+      <label for="amount">Amount : </label>
+      <output id="amount">
+    </div>
+  </form>
+</main>
+
+</body>
+</html>
